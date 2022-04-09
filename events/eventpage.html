@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ASME-VIT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="../assets/img/logos/ASME-VIT.png" rel="icon">
+  <link href="../assets/img/logos/ASME-VIT.png" rel="apple-touch-icon">
+
+ 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <link href="../assets/css/modals.css" rel="stylesheet">
+ 
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+body{
+     overflow-x: hidden;
+}
+
+
+
+/* Add a background color and some padding around the form */
+.container1 {
+  border-radius: 5px;
+  background-color: rgba(63, 63, 63, 0.829);
+  padding: 20px;
+  max-width: 900px;
+  align-items: center;
+    
+}
+
+.img-container {
+        text-align: center;
+        display: block;
+      }
+
+      .box {
+        display: none;
+      }
+
+  </style>
+
+
+</head>
+
+<body  background="../assets/img/backg.jpg">
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="../index.html"><span>ASME-VIT</span></a></h1>
+        
+         
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Events</a></li>
+            <li><a class="nav-link scrollto" href="../blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto " href="../gallery.html">Gallery</a></li>
+            
+            <li class="dropdown"><a style="cursor: pointer;"><span>Team</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#team">Board'21</a></li>
+                <li><a href="../team21.html">Team'21</a></li>
+                <li><a href="../ex-board.html">Previous boards</a></li>
+               
+              </ul>
+            </li>
+            <li class="dropdown"><a style="cursor: pointer;"><span>Technical Teams</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="https://www.asmeprojectsteam.com/">ASME-VIT Projects Team</a></li>
+                <li><a href="../TeamAnant.html">Team Anant</a></li>
+               
+              </ul>
+            </li>
+            
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="getstarted scrollto" href="../asmelogin/main.html">Login</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+
+<section style="background-color: rgb(63, 63, 63);"></section>
+
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <form id="reg">
+                     
+                    <label style="color: rgb(94, 94, 94);">Name :</label>
+                      <input type="text" id="NameMod" style="width: 100%;height: 35px;border-radius: 5px;border: 1px solid rgb(136, 136, 136);" required><br><br>
+                      <label style="color: rgb(94, 94, 94);">Email :</label>
+                     <input type="text" id="EmailMod" style="width: 100%;height: 35px;border-radius: 5px;border: 1px solid rgb(136, 136, 136);" required><br>
+                  
+              
+                      <label style="margin-top: 20px;color: rgb(94, 94, 94);">Registration No. :</label><br>
+                         <input type="text"  id="RegnoMod" style="cursor: pointer;width: 100%;height: 35px;border-radius: 5px;border: 1px solid rgb(136, 136, 136);" required><br><br>
+                      <label style="color: rgb(94, 94, 94);">Contact No. :</label>   <br>
+                        <input type="tel" id="ContactMod" style="cursor: pointer;width: 100%;height: 35px;border-radius: 5px;border: 1px solid rgb(136, 136, 136);" required><br><br>
+             
+                        <label style="color: rgb(94, 94, 94);">Whatsapp No. :</label>   <br>
+                        <input type="tel" id="WhatsappMod" style="cursor: pointer;width: 100%;height: 35px;border-radius: 5px;border: 1px solid rgb(136, 136, 136);" required>
+                
+             
+                      
+                      <div class="modal-footer" style="margin-top: 20px;">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button id="AddModBtn" type="button" class="btn btn-success" onclick="AddStd()">Register</button>
+                           <button id="UpdModBtn" type="button" class="btn btn-primary"  onclick="UpdStd()">Update</button>
+                           <button id="DelModBtn" type="button" class="btn btn-danger"  onclick="DelStd()">Delete</button>
+                        
+                      </div>
+                    </form>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+
+<section>
+      
+    
+   </div> 
+ 
+       <div class="row d-flex justify-content-center">
+         <div class="col-md-6">
+          <div class="container1" style="text-align: center;color: whitesmoke;">
+               <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bolder;">Integrated approach in science and technology for a sustainable future</h3><hr>
+               <p style="font-size: 15px;text-align: justify;">Sustainability is development of services, goods, and products that involves meeting our present needs without compromising the ability of future generations to fulfil their needs. It improves the quality of our lives, preserves natural resources for future generations and protects our ecosystem. Innovations in the field of clean transportation, smart cities and renewable energy are allowing better resource management and reducing dependence on fossil fuels and other non-renewable energy. In the coming years, companies across industries will have to continue to prioritize environmental issues and design, test and manufacture technologies that would help them. In this webinar we will discuss about integrated approach in science and technology for a sustainable future.
+                <br><br><span style="color: rgb(118, 165, 42);font-weight: 700;text-align: left;">Event Speaker:</span> Arvind Dhawan</p>
+               
+           
+               <p style="font-size: 16px;background-color: rgb(219, 86, 9);padding: 5px;font-weight: 700;">26th February 2022 | 7 PM IST</p>
+               <button onclick="FillTboxes(null)" type="button" class="btn btn-success" style="width: 100%;" data-toggle="modal" data-target="#exampleModalCenter">Register</button>
+          
+          </div>
+      
+     </div>
+       </div>
+   </section>
+
+   <section></section>
+
+
+   
+
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+
+     <div class="footer-top">
+       <div class="container">
+         <div class="row">
+ 
+           <div class="col-lg-3 col-md-6 footer-contact">
+             <h3>ASME-VIT</h3>
+             <p>
+               VIT Vellore<br>
+               <strong>Sudhanshu Borthakur<br> (Chairperson ASME-VIT)</strong><br>
+               <strong>Phone :</strong> <a href="tel: +91-7002219130"> +91 7002219130</a><br>
+               <strong>Email : </strong><a href="mailto:officialasmevit@gmail.com"> officialasmevit@gmail.com</a> <br>
+             </p>
+           </div>
+ 
+           <div class="col-lg-2 col-md-6 footer-links">
+             <h4>Useful Links</h4>
+             <ul>
+               <li><i class="bx bx-chevron-right"></i> <a href="../index.html">Home</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="../index.html">About us</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="../index.html">Events</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="../gallery.html">Gallery</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="../blog.html">Blogs</a></li>
+             </ul>
+           </div>
+ 
+           <div class="col-lg-3 col-md-6 footer-links">
+             <h4>Departments</h4>
+             <ul>
+               <li><i class="bx bx-chevron-right"></i> <a>Management</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a>Technical</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a>Editorial</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a>Design</a></li>
+         
+             </ul>
+           </div>
+ 
+           <div class="col-lg-4 col-md-6 footer-newsletter">
+             <h4>For sponsorship related queries</h4>
+             <p style="font-weight: bold;">Abhiram S (Public Relations Officer, ASME-VIT)<br>
+            <span style="font-weight: bold;">Contact : </span><a  style="font-weight: normal;" href="tel: +91-7907994545"> +91 7907994545</a><br>
+            <span style="font-weight: bold;">Email : </span><a style="font-weight: normal;" href="mailto:abhirams.asme@gmail.com"> abhirams.asme@gmail.com</a></p>
+           
+           </div>
+ 
+         </div>
+       </div>
+     </div>
+ 
+     <div class="container d-md-flex py-4">
+ 
+       <div class="me-md-auto text-center text-md-start">
+         <div class="copyright">
+           &copy; Copyright <strong><span>ASME-VIT</span></strong>. All Rights Reserved
+         </div>
+         <div class="credits" hidden>
+          
+           Designed by <a href="https://bootstrapmade.com/">Ankur Jyoti Dutta</a>
+         </div>
+       </div>
+       <div class="social-links text-center text-md-right pt-3 pt-md-0">
+         <a href="https://twitter.com/ASMEVIT?s=09" class="twitter"><i class="bx bxl-twitter"></i></a>
+         <a href="https://www.facebook.com/AsmeVit/" class="facebook"><i class="bx bxl-facebook"></i></a>
+         <a href="https://instagram.com/asmevit?utm_medium=copy_link" class="instagram"><i class="bx bxl-instagram"></i></a>
+         <a href="https://www.linkedin.com/company/american-society-of-mechanical-engineers-asme-vit-vellore" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+       </div>
+     </div>
+   </footer><!-- End Footer -->
+ 
+ 
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ </div>
+   <script src="../assets/vendor/aos/aos.js"></script>
+   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+   <script src="../assets/vendor/php-email-form/validate.js"></script>
+   <script src="../assets/vendor/purecounter/purecounter.js"></script>
+   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+ 
+   <script src="../assets/js/main.js"></script>
+ 
+ 
+ 
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+ 
+ 
+ 
+   <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBrqsxfpgvnranZURCMdJqcXqvYXtjv1dg",
+      authDomain: "asmeportal.firebaseapp.com",
+      projectId: "asmeportal",
+      storageBucket: "asmeportal.appspot.com",
+      messagingSenderId: "831583795108",
+      appId: "1:831583795108:web:c2290b92d03722b34db331",
+      measurementId: "G-CGZKGS5MVH"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+
+
+
+        //GET ALL DATAzz
+        var stdNo;
+        function SelectAllData(){
+          document.getElementById('tbody1').innerHTML="";
+
+          stdNo=0;
+            firebase.database().ref('trial').orderByChild('status').once('value',
+            function(AllRecords){
+                AllRecords.forEach(
+                    function(CurrentRecord){
+           
+                        var name = CurrentRecord.val().name;
+                        var email = CurrentRecord.val().email;
+                        var regno = CurrentRecord.val().regno;
+                        var contact = CurrentRecord.val().contact;
+                        var whatsapp = CurrentRecord.val().whatsapp;
+                        
+                        
+                        
+                        
+                        AddItemsToTable(name,email,regno,contact,whatsapp);
+
+                    }
+                );
+
+            });
+        }
+
+        window.onload = SelectAllData;
+
+        //Filling the table
+        
+        var stdList = [];
+        function AddItemsToTable(name,email,regno,contact,status){
+            var tbody = document.getElementById('tbody1');
+            var trow = document.createElement('tr');
+            var td0 = document.createElement('td');
+            var td1 = document.createElement('td');
+            var td2 = document.createElement('td');
+            var td3 = document.createElement('td');
+            var td4 = document.createElement('td');
+            var td5 = document.createElement('td');
+   
+         
+
+      
+
+
+          stdList.push([name,email,regno,contact,whatsapp])
+     
+     
+           
+            td0.innerHTML = ++stdNo;
+            td1.innerHTML = name;
+            td2.innerHTML = email;
+            td3.innerHTML = regno;
+            td4.innerHTML = contact;
+            td5.innerHTML = whatsapp;
+            
+    
+     
+            trow.appendChild(td0);
+            trow.appendChild(td1); 
+            trow.appendChild(td2); 
+            trow.appendChild(td3); 
+            trow.appendChild(td4); 
+            trow.appendChild(td5);
+
+           
+      
+           
+           
+  
+            var ControlDiv = document.createElement("div");
+           
+         
+         
+            trow.appendChild(ControlDiv);
+
+            tbody.appendChild(trow);
+            
+        }
+
+        var ModName = document.getElementById('NameMod');
+        var ModEmail = document.getElementById('EmailMod');
+        var ModRegno = document.getElementById('RegnoMod');
+        var ModContact = document.getElementById('ContactMod');
+        var ModWhatsapp = document.getElementById('WhatsappMod');
+      
+        var AddModBtn = document.getElementById('AddModBtn');
+        var UpdModBtn = document.getElementById('UpdModBtn');
+        var DelModBtn = document.getElementById('DelModBtn');
+
+
+        function FillTboxes(index){
+
+          if(index==null){
+
+            ModName.value = "";
+            ModEmail.value = "";
+            ModRegno.value = "";
+            ModContact.value = "";
+            ModWhatsapp.value = "";
+             
+  
+            ModName.disabled=false;
+            ModEmail.disabled=false;
+            ModRegno.disabled=false;
+            ModContact.disabled=false;
+          
+              
+               AddModBtn.style.display='inline-block';
+               UpdModBtn.style.display='none';
+               DelModBtn.style.display='none';
+
+          }
+          else{
+               --index;
+         
+               ModName.value = stdList[index][0];
+               ModEmail.value = stdList[index][1];
+               ModRegno.value = stdList[index][2];
+               ModContact.value = stdList[index][3];
+               ModWhatsapp.value = stdList[index][4];
+
+
+     
+              ModName.disabled=true;
+               ModEmail.disabled=true;
+               ModRegno.disabled=true;
+               ModContact.disabled=true;
+          
+             
+               AddModBtn.style.display='none';
+               UpdModBtn.style.display='inline-block';
+               DelModBtn.style.display='inline-block';
+
+          }
+        }
+
+        function AddStd(){
+             
+             firebase.database().ref("trial/" +ModRegno.value).set(
+                  {
+               
+                    name: ModName.value,
+                    email: ModEmail.value,
+                    regno: ModRegno.value,
+                    contact: ModContact.value,
+                    whatsapp: ModWhatsapp.value
+                    
+
+                  },
+                  (error)=>{
+                       if(error){
+                            alert("Record was not added, there was some problem");
+                       }
+                       else{
+                            alert("Record was added");
+                            document.getElementById('reg').reset();
+                            SelectAllData();
+                            
+                        
+
+                            
+                            
+                       }
+                  }
+             )
+        }
+
+
+
+        function UpdStd(){
+             
+             firebase.database().ref("trial/" +ModRegno.value).update(
+                  {
+         
+                    name: ModName.value,
+                    email: ModEmail.value,
+                    regno: ModRegno.value,
+                    contact: ModContact.value,
+                    whatsapp: ModWhatsapp.value
+
+                  },
+                  (error)=>{
+                       if(error){
+                            alert("Record was not updated, there was some problem");
+                       }
+                       else{
+                            alert("Record was updated");
+                            SelectAllData();
+                            
+                            
+                            
+                       }
+                  }
+             )
+        }
+
+
+
+
+        function DelStd(){
+             
+             firebase.database().ref("trial/" +ModRegno.value).remove().then(
+             function(){
+              alert("Record was deleted");
+              SelectAllData();
+              
+             }
+             )
+        }
+
+
+
+
+
+  </script>
+
+
+
+
+<script>
+     
+   document.onkeydown=function(e)
+   {
+     if (event.keyCode == 123) 
+     {
+       return false;
+     }
+     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+     {
+       return false;
+     }
+ 
+     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) 
+     {
+       return false;
+     }
+ 
+     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) 
+     {
+       return false;
+     }
+   }
+ 
+ </script>
+ 
+ 
+ </body>
+ 
+ </html>
